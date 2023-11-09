@@ -1,0 +1,72 @@
+<!-- form  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-03 | Form </title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        h1{
+            text-align: center;
+            font-size: 35px;
+        }
+        form{
+            background-color: #fff;
+            padding: 20px;
+            width: 60%;
+            margin: auto;
+        }
+        #name, #email, #password {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Registeration Form</h1>
+    <form action="#" method="get">
+        <!-- form validation - we use required fields -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" autofocus required min="2"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required min="7"><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required maxlength="7"><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" required min="1"  max="2"> <br> <br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" multiple required>
+            <option value="male">Male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+            <option value="male">Male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+           
+        </select><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">male</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">other</label> <br> <br>
+
+        <label for="textarea">textarea</label> <br>
+        <textarea name="about" id="textarea" cols="30" rows="10"></textarea> <br> <br>
+
+        <label for="doc">Add Doc.</label> <br>
+        <input type="file" name="" id=""> <br> <br>
+        <button type="submit">Register</button>
+        <button type="reset">RESET</button>
+    </form>
+</body>
+</html>
